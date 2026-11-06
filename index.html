@@ -17,51 +17,55 @@ body {
   font-family: Arial, sans-serif;
   background: #071426;
   color: white;
-  padding: 25px 15px;
+  padding: 20px 14px;
 }
 
 .container {
-  max-width: 450px;
+  max-width: 460px;
   margin: auto;
   text-align: center;
 }
 
-.logo {
-  width: 125px;
-  height: 125px;
-  object-fit: contain;
-  border-radius: 50%;
-  margin: 15px auto;
+header {
+  padding: 25px 10px;
 }
 
 h1 {
   color: #16b9ff;
-  font-size: 30px;
-  margin: 10px;
+  font-size: 34px;
+  letter-spacing: 2px;
 }
 
 .subtitle {
   color: #c4d5e8;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .card {
   background: #102943;
-  padding: 20px;
-  border-radius: 15px;
+  padding: 22px;
+  border-radius: 16px;
   margin: 18px 0;
   border: 1px solid #17628b;
+  text-align: left;
 }
 
 h2 {
   color: #16b9ff;
-  margin-bottom: 15px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.service {
+  padding: 11px 4px;
+  border-bottom: 1px solid #31506b;
 }
 
 .package {
   display: flex;
   justify-content: space-between;
-  padding: 12px 5px;
+  padding: 12px 4px;
   border-bottom: 1px solid #31506b;
 }
 
@@ -71,29 +75,33 @@ h2 {
 }
 
 .validity {
-  margin-top: 15px;
   color: #ffd166;
+  text-align: center;
+  margin-top: 17px;
 }
 
 .button {
   display: block;
-  background: #087de0;
-  color: white;
   padding: 14px;
+  margin-top: 12px;
   border-radius: 9px;
   text-decoration: none;
-  margin-top: 12px;
+  color: white;
+  text-align: center;
   font-weight: bold;
 }
 
-.facebook {
-  background: #1877f2;
-}
+.whatsapp { background: #168c53; }
+.phone { background: #087de0; }
+.email { background: #6653b9; }
+.facebook { background: #1877f2; }
+.save { background: #d28b20; }
 
 .footer {
   color: #91a9c2;
-  font-size: 13px;
-  margin-top: 25px;
+  font-size: 12px;
+  margin: 28px 0 10px;
+  text-align: center;
 }
 </style>
 </head>
@@ -102,62 +110,126 @@ h2 {
 
 <div class="container">
 
+<header>
   <h1>CHALE IT</h1>
-
   <p class="subtitle">
     Tecnologia • Inovação • Soluções Inteligentes
   </p>
+  <p class="subtitle">
+    Soluções tecnológicas ao seu alcance!
+  </p>
+</header>
 
-  <div class="card">
-    <h2>📱 Megas Vodacom</h2>
+<div class="card">
+  <h2>💻 Serviços Informáticos</h2>
 
-    <div class="package">
-      <span>200 MB</span>
-      <span class="price">5 MT</span>
-    </div>
+  <div class="service">🖥️ Instalação e formatação de computadores</div>
+  <div class="service">🔧 Reparação e manutenção de computadores</div>
+  <div class="service">📥 Instalação de programas e drivers</div>
+  <div class="service">🛡️ Proteção contra vírus e malware</div>
+  <div class="service">🌐 Configuração de redes informáticas</div>
+  <div class="service">💾 Backups e recuperação de dados</div>
+  <div class="service">📄 Instalação e configuração do Microsoft Office</div>
+</div>
 
-    <div class="package">
-      <span>400 MB</span>
-      <span class="price">10 MT</span>
-    </div>
+<div class="card">
+  <h2>📱 Megas Vodacom</h2>
 
-    <div class="package">
-      <span>600 MB</span>
-      <span class="price">15 MT</span>
-    </div>
-
-    <div class="package">
-      <span>800 MB</span>
-      <span class="price">20 MT</span>
-    </div>
-
-    <div class="package">
-      <span>1024 MB (1 GB)</span>
-      <span class="price">25 MT</span>
-    </div>
-
-    <p class="validity">⏱ Validade: 24 horas</p>
+  <div class="package">
+    <span>200 MB</span>
+    <span class="price">5 MT</span>
   </div>
 
-  <div class="card">
-    <h2>🌐 Sobre a CHALE IT</h2>
-    <p>
-      Soluções tecnológicas, assistência informática
-      e serviços digitais.
-    </p>
-
-    <a class="button facebook"
-       href="https://www.facebook.com/chalexzzy.dazp"
-       target="_blank">
-       Visitar Facebook
-    </a>
+  <div class="package">
+    <span>400 MB</span>
+    <span class="price">10 MT</span>
   </div>
 
-  <div class="footer">
-    © 2026 CHALE IT — Todos os direitos reservados.
+  <div class="package">
+    <span>600 MB</span>
+    <span class="price">15 MT</span>
   </div>
+
+  <div class="package">
+    <span>800 MB</span>
+    <span class="price">20 MT</span>
+  </div>
+
+  <div class="package">
+    <span>1024 MB (1 GB)</span>
+    <span class="price">25 MT</span>
+  </div>
+
+  <p class="validity">⏱️ Validade: 24 horas</p>
+</div>
+
+<div class="card">
+  <h2>📞 Os Meus Contactos</h2>
+
+  <a class="button whatsapp"
+  href="https://wa.me/258851515492">
+  WhatsApp: 851 515 492
+  </a>
+
+  <a class="button phone"
+  href="tel:+258862828397">
+  Ligar: 862 828 397
+  </a>
+
+  <a class="button email"
+  href="mailto:chalejuliofrancisci@gmail.com">
+  Enviar E-mail
+  </a>
+
+  <button class="button save"
+  style="width:100%;border:0;cursor:pointer;font-size:15px;"
+  onclick="guardarContacto()">
+  📇 Guardar contacto
+  </button>
+
+  <a class="button facebook"
+  href="https://www.facebook.com/chalexzzy.dazp"
+  target="_blank">
+  Visitar Facebook
+  </a>
+</div>
+
+<div class="footer">
+  © 2026 CHALE IT<br>
+  Tecnologia • Inovação • Soluções Inteligentes
+</div>
 
 </div>
+
+<script>
+function guardarContacto() {
+  const contacto = [
+    "BEGIN:VCARD",
+    "VERSION:3.0",
+    "FN:CHALE IT",
+    "ORG:CHALE IT",
+    "TEL;TYPE=CELL,VOICE:+258851515492",
+    "TEL;TYPE=WORK,VOICE:+258862828397",
+    "EMAIL:chalejuliofrancisci@gmail.com",
+    "URL:https://chalejuliofrancisci-ux.github.io/chale-jf-tesoura-/",
+    "END:VCARD"
+  ].join("\r\n");
+
+  const ficheiro = new Blob(
+    [contacto],
+    {type: "text/vcard;charset=utf-8"}
+  );
+
+  const url = URL.createObjectURL(ficheiro);
+  const link = document.createElement("a");
+
+  link.href = url;
+  link.download = "CHALE-IT.vcf";
+  link.click();
+
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+</script>
 
 </body>
 </html>
